@@ -1,5 +1,5 @@
 package uderstandingsubsuper;
-public class Main {
+public class SubSuper_Main {
 	public static void main(String[] args) 
 	{
 		SubClassForMrthodSqr sqr = new SubClassForMrthodSqr();
