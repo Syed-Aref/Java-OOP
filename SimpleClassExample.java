@@ -16,7 +16,7 @@ class Info
 	}
 }
 
-public class InfoClass {
+public class SimpleClassExample {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
