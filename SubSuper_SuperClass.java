@@ -1,5 +1,5 @@
 package uderstandingsubsuper;
-public class SuperClass
+public class SubSuper_SuperClass
 {
 	public int methodAdd(int x, int y) 
 	{
