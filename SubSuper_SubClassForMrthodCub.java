@@ -1,5 +1,5 @@
 package uderstandingsubsuper;
-public class SubClassForMrthodCub extends SuperClass
+public class SubSuper_SubClassForMrthodCub extends SuperClass
 {
 	int MethodCub(int x) 
 	{
