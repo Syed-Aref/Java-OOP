@@ -1,4 +1,4 @@
-package java_how_to_program;
+/// package java_how_to_program;
 
 import org.w3c.dom.ls.LSOutput;
 
