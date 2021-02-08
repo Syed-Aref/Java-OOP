@@ -1,4 +1,4 @@
-package gitposting;
+/// package gitposting;
 
 class Book
 {
