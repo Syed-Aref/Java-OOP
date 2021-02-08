@@ -1,4 +1,4 @@
-public class OOP_Class1 {
+public class Serial_of_class_and_methods { 
 
     public static int add(int x,int y,int z)
     {
@@ -28,5 +28,6 @@ class T
     public static void method_t()
     {
         System.out.println("Hello class T");
+        /// Serials in java(for methods and clas) does not matter.
     }
 }
