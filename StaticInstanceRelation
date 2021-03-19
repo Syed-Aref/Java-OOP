@@ -1,0 +1,102 @@
+class C1{
+	static int x;
+	int y;
+	public C1() {
+		x = 0;
+		y = 0;
+		C1 c = new C1();
+		c.x += 10;
+		c.y += 7;
+		this.x += 12;
+		this.y += 67;
+	}
+	int func() {
+		return y;
+	}
+}
+
+public class Main {
+	static int x1 = 10;
+	static int x2 = 90;
+	
+	int y1 = 10 , y2 = 80;
+	static void staticMeth1() {
+		System.out.println("This is staticMeth1");
+	}
+	static int staticFunc1() {
+		return x1+x2;
+		
+	}
+	static int staticFunc2() {
+		Main mn = new Main();
+		return x1 + mn.x2;
+	}
+	static int staticFunc3() {
+		Main mn = new Main();
+		return mn.y1 + mn.y2;
+	}
+	
+	void instanceMeth1() {
+		System.out.println("This is instanceMeth1");
+	}
+	
+	int instanceFunc1() {
+		return y1 + y2;
+	}
+	int instanceFunc2() {
+		Main mn = new Main();
+		return y1 + mn.y2;
+	}
+	int instanceFunc3() {
+		Main mn = new Main();
+		return x1 + mn.x2 + y1;
+	}
+	int instanceFunc4() {
+		Main mn = new Main();
+		return (x1 + mn.x2 + y1)*staticFunc1();
+	}
+	static int staticFunc5() {
+		Main mn = new Main();
+		return mn.instanceFunc1()*x1;
+	}
+	public static void main(String[] args) {
+		Main mn = new Main();
+		
+		staticMeth1();
+		mn.staticMeth1();
+		
+		/// instanceMeth1(); --> instance methods cant be called this way
+		mn.instanceMeth1();
+		
+	}
+
+}
+
+
+/*
+ * 
+ * 
+ * Inside static method:
+ * Using static method/field without creating instance => Works
+ * Using static method/field creating instance => Works
+ * Using instance method/field without creating instance => Doesnt work
+ * Using inctance method/field creating instance => Works
+ * 
+ * 
+ * Inside instance method:
+ * Using static method/field without creating instance => Works
+ * Using static method/field creating instance => Works
+ * Using instance method/field without creating instance => Works
+ * Using inctance method/field creating instance => Works
+ * 
+ * 
+ * Inside class-constructor 
+ * Using static method/field without creating instance => Works
+ * Using static method/field creating instance => Works
+ * Using instance method/field without creating instance => Works
+ * Using inctance method/field creating instance => Works
+ * 
+ * 
+ * 
+ * 
+ */
