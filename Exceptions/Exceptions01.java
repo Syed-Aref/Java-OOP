@@ -2,7 +2,7 @@ package java_how_to_program;
 
 import java.util.Scanner;
 
-public class Exceptions {
+public class Exceptions01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t;
