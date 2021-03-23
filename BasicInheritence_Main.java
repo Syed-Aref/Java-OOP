@@ -24,7 +24,7 @@ class SubClassForMethodCube extends SuperClass
 
 
 
-public class SubSuper_Main {
+public class BasicInheritence_Main {
     public static void main(String[] args) {
 
         SubClassForMethodSqr sqr = new SubClassForMethodSqr();
