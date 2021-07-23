@@ -1,7 +1,5 @@
 /// package java_how_to_program;
 
-import org.w3c.dom.ls.LSOutput;
-
 import static java.lang.Math.*;
 ///import static java.Math.*;
 
