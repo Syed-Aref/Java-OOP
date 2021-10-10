@@ -20,7 +20,11 @@ public class PassByValue {
         arr[0] = 20;
         System.out.println("arr in method2 is: " + Arrays.toString(arr));
     }
-
+    public static void method2_(int[] arr)
+    {
+        arr = new int[100];
+        System.out.println("arr in method2 is: " + Arrays.toString(arr));
+    }
     public static  void method3(Info info)
     {
         info.name = "Prevail";
@@ -95,8 +99,29 @@ public class PassByValue {
 
  Java is always pass by value
 
- Through method1(x), basically we are passing memory of address/pointer(such as xbzf67) of x in method1().
- We can not change the address/pointer as it has been passed as value.
- However,for reference data types we have an advantage of changing its fields/attributes.
- But we can not change the memory address of the data
+ Through method1(int x), basically we are passing copy of value.
+ 
+ Case: Primitive data type
+ 
+ Suppose, in main method the address of x is 60_x and value is 90
+ In the method, there will be new memory allocated for x of that argument(ex: 70_x) and it will copy the value 90.So, anyh change in method will only affect 70_x not 60_x
+ 
+ Case: Reference data type
+ 
+ Suppose, in main method the address of arr is 1000x. In the method2(int[]) & method2_(int[]) arr will also point to the same address.
+  So, Address of arr(main) = 1000x
+      Address of arr(method2) = 1000x
+      Address of arr(method2_) = 1000x
+ So, changing an attribute in megthod2 means changing attribue on memory 1000x
+ 
+ Howeevr, even after reassigining arr in method2_, arr in main method will not be reassigned
+ method2_(){
+    arr = new int[100];
+ }
+ Afer that:
+ Address of arr(main) = 1000x
+ Address of arr(method2_) = 2000x
+ So, address of arr in method2_ will be chnaged,but not in main method
+ 
+ 
  **/
