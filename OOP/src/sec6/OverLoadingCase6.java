@@ -1,5 +1,5 @@
 package sec6;
-//
+
 class Animal{
 
 }
