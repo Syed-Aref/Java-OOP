@@ -1,3 +1,5 @@
+package sec5;
+
 class P{
     public void m1() {}
 }
