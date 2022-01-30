@@ -1,4 +1,4 @@
-package sec2.member_modifier.protected_.pack1;
+package sec2.member_modifier.protected_modifeir.pack1;
 
 public class A_Class {
     protected int get_num(){
