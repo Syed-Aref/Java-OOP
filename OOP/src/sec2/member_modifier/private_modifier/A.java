@@ -1,4 +1,4 @@
-package sec2.member_modifier.private_;
+package sec2.member_modifier.private_modifier;
 
 public class A {
     private int n;
