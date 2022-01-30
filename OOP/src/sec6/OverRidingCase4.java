@@ -58,11 +58,9 @@ public class OverRidingCase4 {
         System.out.println("-------------------------------------------------");
     }
 }
-/**
+ /**
  * P: m1(int...) ,m1(int),m1(int,int,int)
  * C: m1(int...) ,m1(int),m1(int,int)
  * Since,m1(int,int,int) has only been implemented in parent class but nor in child class
  * it will go to exclusively to parent class(regardless what ref or object combination is done)
- *
- *
  **/
