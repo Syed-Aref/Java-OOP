@@ -13,4 +13,3 @@ class B{
 class C{
 
 }
-
