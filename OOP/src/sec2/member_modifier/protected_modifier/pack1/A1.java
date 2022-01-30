@@ -1,4 +1,4 @@
-package sec2.member_modifier.protected_.pack1;
+package sec2.member_modifier.protected_modifier.pack1;
 
 
 class A1 {
